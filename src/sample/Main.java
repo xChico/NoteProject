@@ -42,7 +42,7 @@ public class Main extends Application {
     public void stop () {
         System.out.println("Closing everything");
     }
-    @Override
+
     public void start(Stage primaryStage) throws Exception {
 
 
