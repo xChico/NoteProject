@@ -128,7 +128,8 @@ public class Main extends Application {
         //searching titles
 
         searchTiBut.setOnAction(e -> {
-            notebook.readT("C:/Users/Innocentius/Desktop/myNotes.txt");
+            //notebook.readT("C:/Users/Innocentius/Desktop/myNotes.txt");
+            notebook.readT("./src/sample/myNotes.txt");
             viewList.clear();
             String titles = searchTitle.getText();
             if(titles.length()!= 0) {
@@ -151,7 +152,8 @@ public class Main extends Application {
                 viewList.clear();
                 listNotes.getItems().clear();
                 LocalDate date = searchDate.getValue();
-                notebook.readT("C:/Users/Innocentius/Desktop/myNotes.txt");
+                //notebook.readT("C:/Users/Innocentius/Desktop/myNotes.txt");
+                notebook.readT("./src/sample/myNotes.txt");
                 for(Note n : notebook.findDate(date)){
                     viewList.add(n);
                 }

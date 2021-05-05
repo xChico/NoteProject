@@ -17,7 +17,8 @@ public class Notebook {
     }
     public static void addNote(String title, LocalDate date, String body) {
 
-        try (FileWriter file = new FileWriter("C:/Users/Innocentius/Desktop/myNotes.txt", true);
+        try (//FileWriter file = new FileWriter("C:/Users/Innocentius/Desktop/myNotes.txt", true);
+             FileWriter file = new FileWriter("./src/sample/myNotes.txt", true);
              BufferedWriter buff = new BufferedWriter(file);
              PrintWriter printing = new PrintWriter(buff);) {
             printing.println(title);
